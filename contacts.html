@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=El+Messiri&display=swap" rel="stylesheet">
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+	<meta http-equiv="Content-Type" content="text/html; charset=urf-8" />
+	<?php header("Content-Type: text/html; charset=utf-8");?>
+	<title>Window Language School</title>
+	<meta name="description" content="Сайт языковой школы Window" />
+	<meta name="keywords" content="Ключевые слова" />
+	<link rel="stylesheet" type="text/css" href="mystyle.css" media="screen" />
+	</head>
+<body> 
+	<div id="page">
+	<header>
+		<a href="/" title="" class="logo"><img src="wdw logo/logo.jpg" alt="Window Language School" /></a>
+		<p></P>
+		<div id="icon1">
+		 <img src="icons/telicon.png" align="left">
+		 <p align="justify" class="txt1"> <b>Контактный телефон:</b> 2-306-306</p>
+		</div>
+		
+
+		<div id="icon2">
+		<img src="icons/emicon.png" align="left">
+		<p align="justify" class="txt2"><b>Электронный адрес:</b> window.school.rostov@gmail.com</p>
+		</div>
+		
+		
+		
+		<br>
+		<div id="exam">
+		<a href="contacts.html#anchor"><img src="headerbutexam.png" align="middle"></a>
+		</div>
+		
+		<nav>
+			<ul id="top_menu">
+				<li><a href="index.html"> Языковая школа Window </a></li>
+				<li><a href="courses.html"> Курсы </a></li>
+				<li><a href="abroad.html"> Обучение за границей </a></li>
+				<li><a href="timetable.html"> Расписание занятий </a></li>
+				<li><a href="exams.html"> Экзамены </a> </li>
+				<li><a href="contacts.html"> Контакты </a></li>
+			</ul>
+		</nav>
+		
+		
+	</header>
+
+	<section id="content">
+		<h1><b>Контакты</b></h1>
+		<hr>
+		<h6><b>Адресс:</b> Ростов-на-Дону, улица Зоологическая 3</h6>
+        <h6><b>Контактный телефон:</b> 2-306-306</h6>
+		<h6><b>Электронный адрес:</b> window.school.rostov@gmail.com</h6>
+		<hr>
+		<h1><b>Где мы находимся</b></h1>
+		<hr>
+		<div id="map">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d72919.34209941898!2d39.6402344488745!3d47.21890552726613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40e3b862276f12f9%3A0xaf22fed78f0bcbaa!2z0KDQvtGB0YLQvtCy0YHQutC40Lkt0L3QsC3QlNC-0L3RgyDQl9C-0L7Qv9Cw0YDQug!5e0!3m2!1sru!2sru!4v1566385277276!5m2!1sru!2sru" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+		
+		</div>
+		
+		
+		<a id="anchor"></a>
+		<hr>
+		
+		
+		
+		<h1><b>Запишитесь на тестирование, экзамен или зарубежный курс прямо сейчас!</b></h1>
+		<hr>
+		<form method="post" action="mail.php" onsubmit="return checkform(this)">
+
+         <div class="left">
+
+             <label for="name"><h6>ФИО:*</h6></h6></label>
+
+             <input maxlength="30" type="text" name="name" required=""/>
+
+             <label for="phone"><h6>Телефон:*</h6></label>
+
+              <input maxlength="30" type="text" name="phone" required=""/>
+
+              <label for="mail"><h6>E-mail:*</h6></label>
+
+              <input maxlength="30" type="text" pattern="[a-zA-Z0-9\._-]*[A-Za-z0-9_]+@[a-zA-Z0-9\-]*[A-Za-z0-9_]+\.[a-zA-Z0-9]+" name="mail" required=""/>
+
+            </div>
+
+         <div class="right">
+
+              <label for="message"><h6>Оставьте заявку тут и мы с Вами обязательно свяжемся:</h6></label>
+
+              <textarea rows="7" cols="50" name="message" required=""></textarea>
+
+              <input type="submit" value="Отправить"/>
+
+         </div>
+
+        </form>
+
+
+
+<script>
+   function checkForm(form) {
+ 
+      var name = form.name.value;
+      var n = name.match(/^[A-Za-zА-Яа-я ]*[A-Za-zА-Яа-я ]+$/);
+      if (!n) {
+         alert("Имя введено неверно, пожалуйста исправьте ошибку");
+         return false;
+      }
+ 
+      var phone = form.phone.value;
+      var p = phone.match(/^[0-9+][0-9- ]*[0-9- ]+$/);
+      if (!p) {
+         alert("Телефон введен неверно");
+         return false;
+      }
+ 
+      var mail = form.mail.value;
+      var m = mail.match(/^[A-Za-z0-9][A-Za-z0-9\._-]*[A-Za-z0-9_]*@([A-Za-z0-9]+([A-Za-z0-9-]*
+      [A-Za-z0-9]+)*\.)+[A-Za-z]+$/);
+      if (!m) {
+         alert("E-mail введен неверно, пожалуйста исправьте ошибку");
+         return false;
+        }
+      return true;
+    }
+</script>
+		
+	<a href="#" title="Вернуться к началу" id="topbutton">Н<br>а<br>в<br>е<br>р<br>х</a>
+		
+    </section>
+	
+	<footer>
+		 <article class="kontext">
+	<div class="layer one show">
+		<h2>Мы в социальных сетях</h2>
+		<br><br><br><br><br><br><br><br><br><br>
+		<div class="soc">
+		 <script src="https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+         <script src="https://yastatic.net/share2/share.js"></script>
+         <div class="ya-share2" data-services="vkontakte,facebook,odnoklassniki,twitter,whatsapp,telegram"></div>
+       </div>
+
+    </div>
+	<div class="layer two">
+		<h2>© Window Language School</h2>
+		<br>
+		<h2>2019 - 2029 Все права защищены</h2>
+	</div>
+	<div class="layer three">
+		<h2>Ждем Вас в нашей школе 1го сентября!</h2>
+	</div>
+</article>
+
+<ul class="bullets"></ul>
+  
+    <script src="index.js"></script>
+		
+		<div class="transition"></div>
+	
+	
+	
+	</footer>
+	</div>
+</body>
+</html>
